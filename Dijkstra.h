@@ -1,7 +1,8 @@
 #ifndef DIJKSTRA_H_
 #define DIJKSTRA_H_
-
+#include <fstream>
 #include <iostream>
+#include <string>
 using namespace std;
 
 class Dijkstra {
@@ -9,7 +10,7 @@ class Dijkstra {
 public:
     Dijkstra();
 
-    void read_list();
+    void readFile(ifstream &file);
 
 
 };

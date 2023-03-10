@@ -1,10 +1,22 @@
 #include <iostream>
+#include <fstream>
 using namespace std;
 #include "Dijkstra.h"
 
 int main(){
-    Dijkstra first;
-    first.read_list();
+   
+   //cout<<"jello"<<endl;
+    ifstream filename("data.txt");
+    
+    if(!filename){
+        cout<<"File not in file."<<endl;
+        return 0;
+    }
 
-    return 0;
+    
+    Dijkstra myDijkstra;
+    myDijkstra.readFile(filename);
+
+
+   return 0;
 }

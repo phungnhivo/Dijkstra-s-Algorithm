@@ -7,8 +7,12 @@ Dijkstra::Dijkstra()
     return;
 }
 
-
-void Dijkstra::read_list()
+void Dijkstra::readFile(ifstream &file)
 {
-    cout<<"hello world"<<endl;
+    string s;
+    while(!file.eof()){
+        getline(file,s);
+        cout<<s<<endl;
+    }
+
 }
